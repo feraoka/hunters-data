@@ -1,8 +1,8 @@
 #!/bin/sh
 
-file=dump.sql
+file=data.sql
 
-ssh monstars0@hunters.lisfactory.com mysqldump -u bbase -pdaisuke1 bbase --skip-opt --skip-dump-date --default-character-set=utf8 > $file
+ssh monstars0@hunters.lisfactory.com mysqldump -u bbase -pdaisuke1 bbase --skip-opt --skip-dump-date --default-character-set=utf8 -t > $file
 diff=`git diff $file`
 
 if [ -n "$diff" ]; then

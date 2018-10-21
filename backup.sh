@@ -9,7 +9,7 @@ if [ -n "$diff" ]; then
 	datetime=`date "+%Y%m%d %H%M%S"`
 	message="update on $datetime"
 	git add $file
-	git commit -m $message
+	git commit -m "$message"
 	git push origin master
 	echo $message
 else

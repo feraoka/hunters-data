@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.23, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.25, for Linux (x86_64)
 --
 -- Host: localhost    Database: bbase
 -- ------------------------------------------------------
--- Server version	5.7.23-0ubuntu0.18.04.1
+-- Server version	5.7.25-0ubuntu0.18.04.2
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -136,6 +136,7 @@ INSERT INTO `attendees` VALUES (164,1);
 INSERT INTO `attendees` VALUES (165,1);
 INSERT INTO `attendees` VALUES (166,1);
 INSERT INTO `attendees` VALUES (167,1);
+INSERT INTO `attendees` VALUES (168,1);
 INSERT INTO `attendees` VALUES (4,4);
 INSERT INTO `attendees` VALUES (12,4);
 INSERT INTO `attendees` VALUES (13,4);
@@ -297,6 +298,7 @@ INSERT INTO `attendees` VALUES (136,9);
 INSERT INTO `attendees` VALUES (139,9);
 INSERT INTO `attendees` VALUES (157,9);
 INSERT INTO `attendees` VALUES (161,9);
+INSERT INTO `attendees` VALUES (168,9);
 INSERT INTO `attendees` VALUES (13,10);
 INSERT INTO `attendees` VALUES (52,10);
 INSERT INTO `attendees` VALUES (53,10);
@@ -529,6 +531,7 @@ INSERT INTO `attendees` VALUES (164,16);
 INSERT INTO `attendees` VALUES (165,16);
 INSERT INTO `attendees` VALUES (166,16);
 INSERT INTO `attendees` VALUES (167,16);
+INSERT INTO `attendees` VALUES (168,16);
 INSERT INTO `attendees` VALUES (34,19);
 INSERT INTO `attendees` VALUES (42,19);
 INSERT INTO `attendees` VALUES (45,19);
@@ -700,6 +703,7 @@ INSERT INTO `attendees` VALUES (164,23);
 INSERT INTO `attendees` VALUES (165,23);
 INSERT INTO `attendees` VALUES (166,23);
 INSERT INTO `attendees` VALUES (167,23);
+INSERT INTO `attendees` VALUES (168,23);
 INSERT INTO `attendees` VALUES (53,24);
 INSERT INTO `attendees` VALUES (54,24);
 INSERT INTO `attendees` VALUES (55,24);
@@ -801,6 +805,7 @@ INSERT INTO `attendees` VALUES (163,24);
 INSERT INTO `attendees` VALUES (165,24);
 INSERT INTO `attendees` VALUES (166,24);
 INSERT INTO `attendees` VALUES (167,24);
+INSERT INTO `attendees` VALUES (168,24);
 INSERT INTO `attendees` VALUES (55,25);
 INSERT INTO `attendees` VALUES (56,25);
 INSERT INTO `attendees` VALUES (58,25);
@@ -971,6 +976,7 @@ INSERT INTO `attendees` VALUES (164,32);
 INSERT INTO `attendees` VALUES (165,32);
 INSERT INTO `attendees` VALUES (166,32);
 INSERT INTO `attendees` VALUES (167,32);
+INSERT INTO `attendees` VALUES (168,32);
 INSERT INTO `attendees` VALUES (123,33);
 INSERT INTO `attendees` VALUES (124,33);
 INSERT INTO `attendees` VALUES (125,33);
@@ -1032,6 +1038,7 @@ INSERT INTO `attendees` VALUES (164,36);
 INSERT INTO `attendees` VALUES (165,36);
 INSERT INTO `attendees` VALUES (166,36);
 INSERT INTO `attendees` VALUES (167,36);
+INSERT INTO `attendees` VALUES (168,36);
 INSERT INTO `attendees` VALUES (134,37);
 INSERT INTO `attendees` VALUES (138,37);
 INSERT INTO `attendees` VALUES (139,37);
@@ -1089,6 +1096,7 @@ INSERT INTO `attendees` VALUES (162,41);
 INSERT INTO `attendees` VALUES (163,41);
 INSERT INTO `attendees` VALUES (164,41);
 INSERT INTO `attendees` VALUES (166,41);
+INSERT INTO `attendees` VALUES (168,41);
 INSERT INTO `attendees` VALUES (157,42);
 INSERT INTO `attendees` VALUES (159,42);
 INSERT INTO `attendees` VALUES (160,42);
@@ -1098,6 +1106,7 @@ INSERT INTO `attendees` VALUES (164,42);
 INSERT INTO `attendees` VALUES (167,42);
 INSERT INTO `attendees` VALUES (164,43);
 INSERT INTO `attendees` VALUES (165,43);
+INSERT INTO `attendees` VALUES (168,44);
 
 --
 -- Dumping data for table `batters`
@@ -1817,6 +1826,15 @@ INSERT INTO `batters` VALUES (723,167,1,7,0);
 INSERT INTO `batters` VALUES (724,167,16,8,0);
 INSERT INTO `batters` VALUES (725,167,42,9,0);
 INSERT INTO `batters` VALUES (726,167,37,10,0);
+INSERT INTO `batters` VALUES (727,168,32,1,0);
+INSERT INTO `batters` VALUES (728,168,23,2,0);
+INSERT INTO `batters` VALUES (729,168,24,3,0);
+INSERT INTO `batters` VALUES (730,168,41,4,0);
+INSERT INTO `batters` VALUES (731,168,36,5,0);
+INSERT INTO `batters` VALUES (732,168,44,6,0);
+INSERT INTO `batters` VALUES (733,168,9,7,0);
+INSERT INTO `batters` VALUES (734,168,16,8,0);
+INSERT INTO `batters` VALUES (735,168,1,9,0);
 
 --
 -- Dumping data for table `battings`
@@ -3951,6 +3969,38 @@ INSERT INTO `battings` VALUES (2164,724,7,0,6,5,0,0,0);
 INSERT INTO `battings` VALUES (2165,725,7,0,1,8,1,0,0);
 INSERT INTO `battings` VALUES (2166,726,7,0,7,4,0,0,0);
 INSERT INTO `battings` VALUES (2167,717,7,0,5,5,0,0,0);
+INSERT INTO `battings` VALUES (2168,727,1,0,7,6,0,0,0);
+INSERT INTO `battings` VALUES (2169,728,1,0,1,7,0,1,0);
+INSERT INTO `battings` VALUES (2170,729,1,0,1,7,0,0,0);
+INSERT INTO `battings` VALUES (2171,730,1,0,5,4,0,0,1);
+INSERT INTO `battings` VALUES (2172,731,1,0,11,0,0,0,0);
+INSERT INTO `battings` VALUES (2173,732,2,0,1,5,0,1,2);
+INSERT INTO `battings` VALUES (2174,733,2,0,11,0,0,0,0);
+INSERT INTO `battings` VALUES (2175,734,2,0,9,0,0,1,0);
+INSERT INTO `battings` VALUES (2176,735,2,0,7,1,0,0,0);
+INSERT INTO `battings` VALUES (2177,727,2,0,6,6,1,0,0);
+INSERT INTO `battings` VALUES (2178,728,2,0,5,6,0,0,0);
+INSERT INTO `battings` VALUES (2179,729,3,0,5,5,0,0,0);
+INSERT INTO `battings` VALUES (2180,730,3,0,5,1,0,0,0);
+INSERT INTO `battings` VALUES (2181,731,3,0,7,4,0,0,0);
+INSERT INTO `battings` VALUES (2182,732,4,0,2,8,0,1,0);
+INSERT INTO `battings` VALUES (2183,733,4,0,7,9,1,0,0);
+INSERT INTO `battings` VALUES (2184,734,4,0,7,5,0,0,0);
+INSERT INTO `battings` VALUES (2185,735,4,0,1,7,0,0,0);
+INSERT INTO `battings` VALUES (2186,727,4,0,7,2,0,0,0);
+INSERT INTO `battings` VALUES (2187,728,5,0,9,0,0,1,1);
+INSERT INTO `battings` VALUES (2188,729,5,0,7,4,0,0,0);
+INSERT INTO `battings` VALUES (2189,730,5,0,1,8,0,1,0);
+INSERT INTO `battings` VALUES (2190,731,5,0,8,9,2,1,0);
+INSERT INTO `battings` VALUES (2191,732,5,0,2,7,1,1,1);
+INSERT INTO `battings` VALUES (2192,733,5,0,6,5,1,0,1);
+INSERT INTO `battings` VALUES (2193,734,5,0,6,5,0,1,0);
+INSERT INTO `battings` VALUES (2194,735,5,0,5,2,0,0,0);
+INSERT INTO `battings` VALUES (2195,727,5,0,1,8,1,1,1);
+INSERT INTO `battings` VALUES (2196,728,5,1,6,5,0,1,0);
+INSERT INTO `battings` VALUES (2197,729,5,1,9,0,0,1,1);
+INSERT INTO `battings` VALUES (2198,730,5,1,1,8,0,0,0);
+INSERT INTO `battings` VALUES (2199,731,5,1,7,1,0,0,0);
 
 --
 -- Dumping data for table `events`
@@ -4083,6 +4133,7 @@ INSERT INTO `events` VALUES (164,'2018-08-18 09:00:00','二子多摩川緑地','
 INSERT INTO `events` VALUES (165,'2018-09-01 11:00:00','ガス橋','5','オーシャンリーグ','ピースアイランズ',2,'',1);
 INSERT INTO `events` VALUES (166,'2018-09-08 09:00:00','二子多摩川緑地','A','練習','そこらへんのチーム',2,'練習途中から練習試合',1);
 INSERT INTO `events` VALUES (167,'2018-10-20 13:00:00','多摩川緑地野球場','10','練習試合','ライガース',2,'助っ人は木村Jrゆうきくん',1);
+INSERT INTO `events` VALUES (168,'2019-03-30 11:00:00','多摩川緑地','10','オーシャンリーグ','ライガース',2,'6回表ライガース攻撃中に時間切れ終了。相手エラー多数。相手先発は背番号21のサウスポー。5回大量失点後に右クォーター？に交代。\r\n先発マッチーで、途中5回から大久保',1);
 
 --
 -- Dumping data for table `games`
@@ -4163,6 +4214,7 @@ INSERT INTO `games` VALUES (163,1,'1,2,0,0,0,1','5,3,4,0,4,X',-1,4,16);
 INSERT INTO `games` VALUES (164,0,'0,0,0,1,0,0,0','0,2,1,4,0,0,X',1,7,1);
 INSERT INTO `games` VALUES (165,0,'0,0,2,7,1','0,1,0,0,0',-1,1,10);
 INSERT INTO `games` VALUES (167,0,'2,2,2,0,0,1,0','0,0,0,0,1,0,1',-1,2,7);
+INSERT INTO `games` VALUES (168,0,'2,0,0,0,0','1,2,0,1,9',1,13,2);
 
 --
 -- Dumping data for table `members`
@@ -4207,6 +4259,7 @@ INSERT INTO `members` VALUES (40,'山口',1);
 INSERT INTO `members` VALUES (41,'大久保',1);
 INSERT INTO `members` VALUES (42,'飯野',1);
 INSERT INTO `members` VALUES (43,'ハリケーン市川',1);
+INSERT INTO `members` VALUES (44,'木村Jr.',1);
 
 --
 -- Dumping data for table `users`
